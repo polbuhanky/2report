@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/content_padding_3_4"
+    android:paddingLeft="@dimen/content_padding"
+    android:paddingStart="@dimen/content_padding"
+    android:paddingRight="@dimen/content_padding"
+    android:paddingEnd="@dimen/content_padding"
+    android:paddingBottom="@dimen/content_padding"
+    android:background="@drawable/bg_block_header">
+
+    <TextView
+        android:id="@+id/checklist_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_large"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/list_item_primary_text" />
+
+    <TextView
+        android:id="@+id/trade_object_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/size_semi_medium"
+        android:textColor="@color/dark_gray" />
+
+    <TextView
+        android:id="@+id/multiple_filling"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_update_report_label_multifilling"
+        android:textColor="@color/list_item_secondary_text"
+        android:textSize="@dimen/size_small" />
+
+    <TextView
+        android:id="@+id/gps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/activity_update_report_label_gps"
+        android:textColor="@color/list_item_secondary_text"
+        android:textSize="@dimen/size_small" />
+</LinearLayout>

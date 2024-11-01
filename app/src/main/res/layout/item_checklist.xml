@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/content_padding"
+    android:paddingBottom="@dimen/content_padding"
+    android:paddingLeft="@dimen/content_padding_5_4"
+    android:paddingStart="@dimen/content_padding_5_4"
+    android:paddingRight="@dimen/content_padding_5_4"
+    android:paddingEnd="@dimen/content_padding_5_4"
+    android:background="@drawable/selector_list_item_common">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/icon_arrow"
+        android:layout_toStartOf="@+id/icon_arrow"
+        android:layout_marginBottom="5dp"
+        android:includeFontPadding="false"
+        android:textSize="@dimen/size_medium"
+        android:textColor="@color/list_item_primary_text" />
+
+    <TextView
+        android:id="@+id/expires_at"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:textColor="@color/list_item_secondary_text"
+        android:textSize="@dimen/size_small" />
+
+    <TextView
+        android:id="@+id/multiple_filling"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expires_at"
+        android:text="@string/activity_update_report_label_multifilling"
+        android:textColor="@color/list_item_secondary_text"
+        android:textSize="@dimen/size_small" />
+
+    <TextView
+        android:id="@+id/gps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/multiple_filling"
+        android:text="@string/activity_checklists_label_gps"
+        android:textColor="@color/list_item_secondary_text"
+        android:textSize="@dimen/size_small" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/icon_arrow"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/content_padding"
+        android:layout_marginStart="@dimen/content_padding"
+        android:layout_centerVertical="true"
+        app:iiv_color="@color/list_item_chevron"
+        app:iiv_icon="gmd-chevron-right" />
+</RelativeLayout>

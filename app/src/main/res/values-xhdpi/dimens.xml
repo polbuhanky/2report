@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_smaller">12sp</dimen>
+    <dimen name="size_small">14sp</dimen>
+    <dimen name="size_semi_medium">16sp</dimen>
+    <dimen name="size_medium">18sp</dimen>
+    <dimen name="size_large">24sp</dimen>
+
+    <dimen name="preload_header_height">83dp</dimen>
+    <dimen name="preload_leftRight_margin">50dp</dimen>
+    <dimen name="preload_or_topBottom_margin">50dp</dimen>
+    <dimen name="field_margin_bottom">15dp</dimen>
+    <dimen name="icon_edit_text_icon_min_width">50dp</dimen>
+    <dimen name="preload_top_margin">10dp</dimen>
+    <dimen name="text_size_control_primary">18sp</dimen>
+    <dimen name="button_margin_topBottom">12dp</dimen>
+    <dimen name="text_size_button_login_qr">28sp</dimen>
+    <dimen name="login_qr_btn_margin_leftRight">24dp</dimen>
+    <dimen name="edit_text_size_primary">18sp</dimen>
+    <dimen name="icon_text_edit_padding_leftRight">15dp</dimen>
+    <dimen name="remember_me_margin_bottom">25dp</dimen>
+    <dimen name="remember_me_margin_top">0dp</dimen>
+    <dimen name="login_form_top_margin">30dp</dimen>
+</resources>

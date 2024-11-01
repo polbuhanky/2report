@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:fitsSystemWindows="true"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_above="@+id/button_retry"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_size_20"
+            android:text="@string/error_header_server_error" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textSize="@dimen/font_size_16"
+            android:text="@string/error_text_server_error" />
+    </LinearLayout>
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:padding="16dp"
+        android:background="@drawable/selector_button_transparent"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/font_size_20"
+        android:text="{gmd_close}" />
+
+    <Button
+        android:id="@+id/button_retry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/Theme.7reporting.Button.Action"
+        android:text="@string/error_button_retry" />
+</RelativeLayout>

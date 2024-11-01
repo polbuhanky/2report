@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:thickness="0dp"
+       android:shape="rectangle">
+    <stroke android:color="@color/icon_text_edit_light_error_stroke" android:width="2dp" />
+    <solid android:color="@android:color/transparent" />
+</shape>

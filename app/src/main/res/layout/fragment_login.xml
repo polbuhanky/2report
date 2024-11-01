@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/preload_header_height"
+            android:paddingEnd="4dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingStart="4dp"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:id="@+id/button_back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:minWidth="1dp"
+                android:src="@drawable/cross"
+                android:text="{gmd-arrow-back}"
+                android:textSize="24sp"
+                app:tint="@color/red" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="64dp"
+            android:paddingEnd="@dimen/preload_leftRight_margin"
+            android:paddingLeft="@dimen/preload_leftRight_margin"
+            android:paddingRight="@dimen/preload_leftRight_margin"
+            android:paddingStart="@dimen/preload_leftRight_margin">
+
+            <include layout="@layout/partial_logo" />
+
+            <seven.bsh.view.widget.input.IconTextEdit
+                android:id="@+id/edit_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/field_margin_bottom"
+                android:layout_marginTop="48dp"
+                android:background="@drawable/stroke_normal_edit_text_light"
+                app:tr_faIcon="{gmd-person}"
+                app:tr_hint="@string/fragment_login_placeholder_login" />
+
+            <seven.bsh.view.widget.input.IconTextEdit
+                android:id="@+id/edit_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/field_margin_bottom"
+                android:background="@drawable/stroke_normal_edit_text_light"
+                android:inputType="textPassword"
+                app:tr_faIcon="{gmd-lock}"
+                app:tr_hint="@string/fragment_login_placeholder_password" />
+
+            <seven.bsh.view.widget.input.IconTextEdit
+                android:id="@+id/edit_env_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/field_margin_bottom"
+                android:background="@drawable/stroke_normal_edit_text_light"
+                app:tr_faIcon="{gmd-work}"
+                app:tr_hint="@string/fragment_login_placeholder_id" />
+
+            <seven.bsh.view.widget.input.RememberMeSwitch
+                android:id="@+id/switch_remember_me"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/remember_me_margin_bottom"
+                android:layout_marginTop="@dimen/remember_me_margin_top" />
+
+            <seven.bsh.view.widget.button.LoginButton
+                android:id="@+id/widget_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="photo_variants">
+        <item>@string/attribute_file_photo_create</item>
+    </array>
+
+    <array name="video_variants">
+        <item>@string/attribute_file_video_create</item>
+    </array>
+
+    <array name="audio_variants">
+        <item>@string/attribute_file_audio_create</item>
+    </array>
+</resources>

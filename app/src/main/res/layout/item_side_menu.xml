@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/content_padding"
+    android:paddingBottom="@dimen/content_padding"
+    android:paddingLeft="@dimen/content_padding"
+    android:paddingRight="@dimen/content_padding"
+    android:background="@drawable/selector_list_item_sliding_menu">
+
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:focusable="false"
+        android:textColor="@color/menu_item_text"
+        android:textSize="@dimen/size_large" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_centerVertical="true"
+        android:textColor="@color/menu_item_text"
+        android:textSize="@dimen/size_small" />
+</RelativeLayout>

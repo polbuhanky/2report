@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/content_padding_5_4"
+    android:paddingRight="@dimen/content_padding_5_4"
+    android:paddingTop="@dimen/content_padding"
+    android:paddingBottom="@dimen/content_padding_5_4"
+    android:background="@drawable/bg_block">
+
+    <RelativeLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_simple">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/time_choice_label"
+            android:layout_toLeftOf="@+id/time_choice_label"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/size_semi_medium" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/time_choice_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

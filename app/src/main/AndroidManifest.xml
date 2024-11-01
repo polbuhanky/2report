@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/distribution"
+    package="seven.bsh">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+
+
+    <application
+        android:name="seven.bsh.Application"
+        android:allowBackup="false"
+        android:supportsRtl="true"
+        android:icon="@mipmap/ic_launcher"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:label="7 report"
+        android:theme="@style/Theme.7reporting">
+
+        <activity
+            android:name="seven.bsh.view.start.StartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Preload"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:exported="true"
+            android:name="seven.bsh.view.custom_views.CameraPhotoActivity3" />
+        <activity
+            android:exported="false"
+
+            android:name="seven.bsh.view.tradeObject.TradeObjectActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.checklists.ChecklistsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.reports.ApprovedReportsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Checklist" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.reports.RejectedReportsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Checklist" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.reports.ForImprovementReportsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Checklist" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.reports.NewReportsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Checklist" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.queue.DraftReportsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Checklist" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.queue.QueueActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting.Checklist" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.report.view.QueueReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.report.update.DraftReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.report.update.CreateReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.report.update.UpdateReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.report.view.ViewReportActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.profile.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.cache.CacheActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.start.QrScannerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting" />
+
+        <activity
+            android:exported="false"
+            android:name="seven.bsh.view.fileManager.FileManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.7reporting" />
+
+        <service
+            android:name="seven.bsh.net.service.QueueService"
+            android:exported="false" />
+
+        <service
+            android:name="seven.bsh.net.service.CacheService"
+            android:exported="false" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="919d9d64dd51d09994a423e4e9486e82d9124b87" />
+    </application>
+</manifest>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/partial_toolbar" />
+
+            <seven.bsh.view.widget.list.InfinityListView
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_main"
+                android:clipToPadding="false"
+                android:listSelector="@android:color/transparent"
+                android:paddingTop="@dimen/content_padding_1_2"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="vertical" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_empty"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_main"
+                android:gravity="center"
+                android:paddingLeft="@dimen/content_padding"
+                android:paddingRight="@dimen/content_padding"
+                android:text="@string/activity_reports_empty"
+                android:textSize="@dimen/size_large" />
+
+        </LinearLayout>
+
+        <include layout="@layout/partial_side_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</RelativeLayout>

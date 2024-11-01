@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#FFFFFF</color>
+    <color name="light_gray">#F1F2F2</color>
+    <color name="gray">#E6E7E8</color>
+    <color name="semi_gray">#A7A9AC</color>
+    <color name="dark_gray">#414042</color>
+    <color name="green">#FF279642</color>
+    <color name="cyan">#FF33A89C</color>
+    <color name="dark_blue">#FF203D69</color>
+    <color name="blue">#FF3A72BC</color>
+    <color name="light_blue">#FF0079FF</color>
+    <color name="crimson">#b51933</color>
+    <color name="red">#e53935</color>
+    <color name="light_red">#ff6961</color>
+    <color name="orange">#FFE28129</color>
+    <color name="dark_orange">#FFDD5910</color>
+    <color name="black_trans90">#07000000</color>
+
+    <!-- COMMON -->
+    <color name="primaryDark">#c4312d</color>
+    <color name="primary">@color/red</color>
+    <color name="accent">@color/light_red</color>
+    <color name="activity_bg">@color/gray</color>
+
+    <color name="btn_light_bg">#30FFFFFF</color>
+    <color name="btn_pressed_light_bg">#6EFFFFFF</color>
+    <color name="btn_light_stroke">#4AFFFFFF</color>
+    <color name="btn_pressed_light_stroke">#FFFFFF</color>
+    <color name="btn_light_text">#6EFFFFFF</color>
+    <color name="btn_pressed_light_text">#FFFFFFFF</color>
+
+    <color name="icon_text_edit_text">@color/dark_gray</color>
+    <color name="icon_text_edit_hint">#4A000000</color>
+    <color name="icon_text_edit_light_bg">#15000000</color>
+    <color name="icon_text_edit_light_stroke">#4AFFFFFF</color>
+    <color name="icon_text_edit_pressed_light_stroke">#FFFFFFFF</color>
+    <color name="icon_text_edit_light_icon">@color/dark_gray</color>
+    <color name="icon_text_edit_light_icon_bg">#30000000</color>
+
+    <color name="button_orange_bg">@color/red</color>
+    <color name="button_orange_bg_pressed">@color/light_red</color>
+
+    <color name="button_primary_bg">@color/red</color>
+    <color name="button_primary_bg_pressed">@color/light_red</color>
+    <color name="button_orange_text">@color/white</color>
+
+    <color name="placeholder_bg">#CC000000</color>
+    <color name="placeholder_text">@color/white</color>
+
+    <!-- LISTS -->
+    <color name="list_item_pressed">@color/light_gray</color>
+    <color name="list_item_primary_text">@color/dark_gray</color>
+    <color name="list_item_secondary_text">#949598</color>
+    <color name="list_item_chevron">#C7C7CC</color>
+    <color name="list_item_directory_icon">@color/light_red</color>
+    <color name="list_item_partial_divider">@color/gray</color>
+    <color name="list_item_status_error">@color/red</color>
+
+    <!-- БОКОВОЕ МЕНЮ -->
+    <color name="menu_bg">#292929</color>
+    <color name="menu_item_text">#B8C7CE</color>
+    <color name="menu_item_text_category">#79B8C7CE</color>
+    <color name="menu_item_text_version">#20999999</color>
+    <color name="menu_item_bg_pressed">#242424</color>
+    <color name="menu_item_pressed_active">@color/light_red</color>
+    <color name="menu_item_bg_divider">#1f1f1f</color>
+    <color name="menu_header_bg">#1f1f1f</color>
+    <color name="menu_header_bg_pressed">#181818</color>
+    <color name="menu_item_badge_text">#FFFFFFFF</color>
+    <color name="menu_item_badge_bg_error">@color/red</color>
+    <color name="menu_item_badge_bg_warning">@color/orange</color>
+    <color name="menu_item_badge_bg_success">@color/green</color>
+    <color name="menu_item_badge_bg_primary">@color/blue</color>
+
+    <!-- PRELOAD SCREEN -->
+    <color name="preload_primary">#6EFFFFFF</color>
+    <color name="preload_version_label">@color/semi_gray</color>
+    <color name="icon_text_edit_light_error_stroke">@color/red</color>
+    <color name="btn_header_pressed_bg">@color/gray</color>
+
+    <!-- TRADE_OBJECTS SCREEN -->
+    <color name="trade_object_bar_icon">#B8C7CE</color>
+    <color name="list_item_divider">#BCBEC0</color>
+</resources>

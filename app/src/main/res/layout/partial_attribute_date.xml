@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/content_padding_1_2"
+    android:paddingRight="@dimen/content_padding_1_2"
+    android:paddingBottom="@dimen/content_padding_1_2"
+    android:background="@drawable/bg_block">
+
+    <RelativeLayout
+        android:id="@+id/select_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingStart="@dimen/content_padding"
+        android:background="@drawable/selector_btn_simple">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/date_choice_label"
+            android:layout_toLeftOf="@+id/date_choice_label"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:includeFontPadding="false"
+            android:textColor="@color/dark_gray"
+            android:textSize="@dimen/size_semi_medium" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/date_choice_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/content_padding"
+            android:paddingLeft="@dimen/content_padding"
+            android:paddingRight="@dimen/content_padding"
+            android:paddingBottom="@dimen/content_padding"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textAllCaps="true"
+            android:textColor="@color/accent" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:paddingTop="@dimen/content_padding_1_2"
+        android:paddingBottom="@dimen/content_padding"
+        android:background="@drawable/bg_error_block"
+        android:visibility="gone"
+        android:textSize="@dimen/size_small"
+        android:includeFontPadding="false"
+        android:textColor="@color/white" />
+</LinearLayout>

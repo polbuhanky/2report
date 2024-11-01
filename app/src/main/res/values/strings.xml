@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- PLURALS -->
+    <plurals name="tradeObjects">
+        <item quantity="one">точка</item>
+        <item quantity="few">точки</item>
+        <item quantity="other">точек</item>
+    </plurals>
+    <plurals name="checklists">
+        <item quantity="one">чеклист</item>
+        <item quantity="few">чеклиста</item>
+        <item quantity="other">чеклистов</item>
+    </plurals>
+
+    <!-- COMMON -->
+    <string name="image_description_none" translatable="false">none</string>
+    <string name="gps_error_services">Служба геолокации не включена</string>
+
+    <!-- ERRORS -->
+    <string name="error_header_no_internet">Ошибка соединения</string>
+    <string name="error_text_no_internet">Проверьте соединение с интернетом\nили попробуйте обновить страницу</string>
+    <string name="error_header_server_error">Проводятся технические\nработы</string>
+    <string name="error_text_server_error">Попробуйте позже\nили обратитесь в поддержку</string>
+    <string name="error_button_update">Обновить</string>
+    <string name="error_button_retry">Попробовать еще раз</string>
+
+    <!-- СЕТЬ -->
+    <string name="network_error_no_internet">Соединение не доступно.\nПроверьте настройки подключения к сети.</string>
+    <string name="network_error_parse">Возникла непредвиденная ошибка при разборе ответа от сервера.</string>
+    <string name="network_error_unknown">Возникла непредвиденная ошибка: %1$d</string>
+    <string name="network_error_500">Возникла серверная ошибка.</string>
+
+    <!-- ПОПАПЫ -->
+    <string name="dialog_button_ok">OK</string>
+    <string name="dialog_button_cancel">Отмена</string>
+    <string name="dialog_button_yes">Да</string>
+    <string name="dialog_button_no">Нет</string>
+
+    <!-- БОКОВОЕ МЕНЮ -->
+    <string name="menu_item_settings">Настройки</string>
+    <string name="menu_item_cache">Получение заданий</string>
+    <string name="menu_item_trade_objects">Задания</string>
+    <string name="menu_item_queue">Очередь отправки</string>
+    <string name="menu_item_reports">Отчеты</string>
+    <string name="menu_item_reports_approved">Принятые</string>
+    <string name="menu_item_reports_rejected">Отклоненные</string>
+    <string name="menu_item_reports_draft">Черновики</string>
+    <string name="menu_item_reports_new">Отправленные</string>
+    <string name="menu_item_reports_forImprovement">На доработку</string>
+    <string name="menu_item_logout">Выйти</string>
+    <string name="menu_item_version">Сборка %1$s</string>
+
+    <!-- СТАРТОВЫЙ ЭКРАН -->
+    <string name="fragment_start_label_retry">Попробовать снова</string>
+    <string name="fragment_start_label_version">Сборка %1$s</string>
+    <string name="fragment_start_label_demo">Запустить демо</string>
+    <string name="fragment_start_label_login">Войти</string>
+    <string name="fragment_start_label_or">или</string>
+
+    <!-- ЭКРАН АВТОРИЗАЦИИ -->
+    <string name="fragment_login_label_remember_me">Запомнить меня</string>
+    <string name="fragment_login_placeholder_login">Логин</string>
+    <string name="fragment_login_placeholder_password">Пароль</string>
+    <string name="fragment_login_placeholder_id">ID окружения</string>
+    <string name="fragment_login_error_id_not_found">Указан неверный ID.</string>
+    <string name="fragment_login_error_user_not_found">Неверный логин или пароль.</string>
+    <string name="fragment_login_error_wrong_qr">Некорректный QR код.</string>
+
+    <!-- ЭКРАН ТОРГОВЫХ ОБЪЕКТОВ -->
+    <string name="activity_trade_objects_title">Торговые точки</string>
+    <string name="activity_trade_objects_action_search">Поиск</string>
+    <string name="activity_trade_objects_action_filter">Фильтр</string>
+    <string name="activity_trade_objects_action_filter_gps">Удаленность</string>
+    <string name="activity_trade_objects_action_filter_name">Название</string>
+    <string name="activity_trade_objects_action_filter_uid">Идентификатор</string>
+    <string name="activity_trade_objects_action_refresh">Обновить</string>
+    <string name="activity_trade_objects_empty">Нет торговых точек для отображения</string>
+    <string name="activity_trade_objects_label_distance_m">м</string>
+    <string name="activity_trade_objects_label_distance_km">км</string>
+    <string name="activity_trade_objects_label_name_with_uid"><![CDATA[<strong>%1$s</strong> <font color="#%2$s">%3$s</font>]]></string>
+
+    <!-- ЭКРАН ЧЕКЛИСТОВ -->
+    <string name="activity_checklists_title">Торговая точка</string>
+    <string name="activity_checklists_empty">Нет чеклистов для отображения</string>
+    <string name="activity_checklists_label_gps">Местоположение</string>
+    <string name="activity_checklists_label_expired"><![CDATA[<font color="#%2$s">Просрочено: %1$s]]></string>
+    <string name="activity_checklists_label_not_expired"><![CDATA[Заполнить до: <font color="#%2$s">%1$s</font>]]></string>
+
+    <!-- ЭКРАН ПРОФИЛЯ -->
+    <string name="activity_profile_title">Профиль</string>
+    <string name="activity_profile_label_id">ID: %1$s</string>
+    <string name="activity_profile_label_name">Имя: %1$s</string>
+    <string name="activity_profile_label_registered_at">Зарегистрирован: %1$s</string>
+    <string name="activity_profile_label_project_id">ID проекта: %1$s</string>
+    <string name="activity_profile_label_project_name">Проект: %1$s</string>
+
+    <!-- ЭКРАН ОТЧЕТОВ -->
+    <string name="activity_reports_title">Отчеты</string>
+    <string name="activity_reports_title_approved">Принятые</string>
+    <string name="activity_reports_title_draft">Черновики</string>
+    <string name="activity_reports_title_for_improvement">На доработку</string>
+    <string name="activity_reports_title_new">Отправленные</string>
+    <string name="activity_reports_title_rejected">Отклоненные</string>
+    <string name="activity_reports_title_choice">Выбрано: %d</string>
+    <string name="activity_reports_action_delete">Удалить</string>
+    <string name="activity_reports_action_send">Отправить</string>
+    <string name="activity_reports_no_report">Отчет отсутствует в кэше или еще не успел сохраниться.</string>
+    <string name="activity_reports_empty">Нет отчетов для отображения.</string>
+    <string name="activity_reports_empty_draft">Список очереди отправки пуст.</string>
+    <string name="activity_reports_label_report_name"><![CDATA[%1$d <font color="#%2$s">%3$s</font>]]></string>
+
+    <!-- ЭКРАН ОЧЕРЕДИ ОТПРАВКИ -->
+    <string name="activity_queue_title">Очередь отправки</string>
+    <string name="activity_queue_label_status_pending">Новый отчет</string>
+    <string name="activity_queue_label_status_queue">В очереди на отправку</string>
+    <string name="activity_queue_label_status_sendingData">Отправка отчета</string>
+    <string name="activity_queue_label_status_sendingFiles">Отправка файлов</string>
+    <string name="activity_queue_label_status_sendingFilled">Окончание отправки</string>
+    <string name="activity_queue_label_status_error_data"><![CDATA[<font color="#%1$s">Ошибка отправки данных: %2$s</font>]]></string>
+    <string name="activity_queue_label_status_error_files"><![CDATA[<font color="#%1$s">Ошибка отправки файлов: %2$s</font>]]></string>
+    <string name="activity_queue_label_status_error_status"><![CDATA[<font color="#%1$s">Ошибка статуса: %2$s</font>]]></string>
+    <string name="activity_queue_popup_delete">Удалить выбранные отчеты? Данные нельзя будет восстановить.</string>
+    <string name="activity_queue_popup_delete_all">Удалить все отчеты? Данные нельзя будет восстановить.</string>
+    <string name="activity_queue_popup_send">Отправить выбранные отчеты на сервер?</string>
+    <string name="activity_queue_popup_send_all">Отправить все отчеты на сервер?</string>
+    <string name="activity_queue_error_no_internet">Нет ответа от сервера, проверьте свое подключение к интернету</string>
+    <string name="activity_queue_error_no_checklist">Чеклист не найден, возможно он был удален или изъят из публикации на сервере</string>
+    <string name="activity_queue_error_parse">Ошибка при разборе ответа от сервера</string>
+    <string name="activity_queue_error_auth">Неверные данные авторизации</string>
+    <string name="activity_queue_error_unknown">Некорректный ответ от сервера</string>
+
+    <!-- ЭКРАН ЗАПОЛНЕНИЯ ОТЧЕТА -->
+    <string name="activity_create_report_title">Чеклист</string>
+    <string name="activity_create_report_title_draft">Черновик</string>
+    <string name="activity_create_report_title_queue">Отчет в очереди</string>
+    <string name="activity_create_report_title_update">Редактирование отчета</string>
+    <string name="activity_update_report_action_save">Сохранить в очередь отправки</string>
+    <string name="activity_update_report_action_save_draft">Сохранить как черновик</string>
+    <string name="activity_update_report_label_gps">Требуются координаты местоположения</string>
+    <string name="activity_update_report_label_multifilling">Множественное заполнение</string>
+    <string name="activity_update_report_error_validate">Отчет содержит ошибки заполнения.</string>
+    <string name="activity_update_report_error_draft">При сохранении в черновики возникла ошибка.</string>
+    <string name="activity_update_report_loader_gps">Получение\nкоординат геолокации…</string>
+    <string name="activity_report_popup_gps_accuracy">Погрешность геолокации (%1$d м) не соответствует требуемой. Все равно отправить?</string>
+    <string name="activity_report_popup_no_gps">Координаты геолокации не получены. Отправить отчет без них?</string>
+    <string name="activity_report_popup_draft">Отчет сохранен в черновики.</string>
+    <string name="activity_report_popup_gallery_unavailable">Галерея недоступна.</string>
+    <string name="activity_checklist_popup_gps_accuracy">Погрешность геолокации (%1$d м) не соответствует требуемой. Все равно отправить?</string>
+    <string name="activity_checklist_popup_no_gps">Координаты геолокации не получены. Отправить отчет без них?</string>
+
+    <!-- ЭКРАН КЭША -->
+    <string name="activity_cache_title">Получение заданий</string>
+    <string name="activity_cache_label_status">Получение данных: %1$d / %2$d</string>
+    <string name="activity_cache_label_clear">Очистить</string>
+    <string name="activity_cache_label_updated_at">Последнее обновление: %1$s</string>
+    <string name="activity_cache_label_not_updated">Последнее обновление: никогда</string>
+    <string name="activity_cache_label_common_get">Загрузить задания</string>
+    <string name="activity_cache_label_sku_get">Загрузить кэш SKU</string>
+
+    <!-- ЭКРАН ОТЧЕТА -->
+    <string name="activity_report_title">Отчет</string>
+    <string name="activity_report_title_queue">Отчет в очереди</string>
+    <string name="activity_report_action_edit">Редактировать</string>
+    <string name="activity_report_not_found">Отчет не найден. Возможно он был удален или уже отправлен на сервер.</string>
+    <string name="activity_report_checklist_not_found">Чеклист не найден. Возможно он был удален или отсутствует в кэше.</string>
+
+    <!-- ЭКРАН ПРОВОДНИКА -->
+    <string name="fragment_file_manager_title">Выбор файла</string>
+    <string name="fragment_file_manager_rootDir">Внутренняя память</string>
+    <string name="fragment_file_manager_error_access">Нет доступа.</string>
+
+    <!-- ЭКРАН QR СКАННЕРА -->
+    <string name="fragment_qr_error_message">Ошибка. На данном устройстве не обнаружена камера или к камере закрыт доступ.</string>
+    <string name="fragment_qr_action_flashlight">Фонарик</string>
+    <string name="fragment_qr_action_camera">Задняя/фронтальная камера</string>
+
+    <!-- СЕРВИС ОТЧЕТОВ -->
+    <string name="service_queue_file_notFound">Приложенного в отчет файла не существует: %1$s</string>
+
+    <!-- АТРИБУТЫ ЧЕКЛИСТА -->
+    <string name="attribute_text_empty">Пусто</string>
+    <string name="attribute_text_error_too_small">Длина текста должна быть больше %1$d символов</string>
+    <string name="attribute_text_error_too_big">Длина текста не должна превышать %1$d символов</string>
+    <string name="attribute_file_empty">Файл не выбран</string>
+    <string name="attribute_file_browse">Выбрать файл</string>
+    <string name="attribute_file_remote">Файл приложен</string>
+    <string name="attribute_file_add">{gmd-add}</string>
+    <string name="attribute_file_delete">{gmd-delete}</string>
+    <string name="attribute_file_restore">{gmd-restore}</string>
+    <string name="attribute_file_photo_create">Сделать фотографию</string>
+    <string name="attribute_file_gallery">Выбрать из галереи</string>
+    <string name="attribute_file_video_create">Записать видео</string>
+    <string name="attribute_file_audio_create">Сделать запись</string>
+    <string name="attribute_file_error_empty">Необходимо приложить файл</string>
+    <string name="attribute_file_error_incorrect">Приложен некорректный файл</string>
+    <string name="attribute_file_error_too_big">Слишком большой файл</string>
+    <string name="attribute_file_error_remote">Выбранный файл находится на удаленном сервере, сохраните его на устройство или выберите другой файл.</string>
+    <string name="attribute_week_choice">Выбрать</string>
+    <string name="attribute_sku_no_sku">Отсутствует SKU в кэше</string>
+    <string name="attribute_sku_price">Цена</string>
+    <string name="attribute_sku_quantity">Количество</string>
+    <string name="attribute_sku_name">Наименование</string>
+    <string name="attribute_sku_remove">{gmd-remove} УБРАТЬ</string>
+    <string name="attribute_sku_add">{gmd-add} ДОБАВИТЬ ЕЩЕ</string>
+    <string name="attribute_sku_error_required">Не заполнены все поля</string>
+    <string name="attribute_sku_error_no_cache">Кэш данных не получен</string>
+    <string name="attribute_week_empty">Ничего не выбрано</string>
+    <string name="attribute_select_empty">Ничего не выбрано</string>
+    <string name="attribute_select_choice">Выбрать</string>
+    <string name="attribute_select_error_empty">Необходимо сделать выбор</string>
+    <string name="attribute_datetime_date">Выбрать дату</string>
+    <string name="attribute_datetime_time">Выбрать время</string>
+    <string name="attribute_error_empty">Необходимо заполнить поле</string>
+</resources>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_item_common">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/content_padding_5_4"
+        android:paddingStart="@dimen/content_padding_5_4"
+        android:paddingRight="@dimen/content_padding_5_4"
+        android:paddingEnd="@dimen/content_padding_5_4"
+        android:paddingBottom="@dimen/content_padding">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/icon_arrow"
+            android:layout_toStartOf="@+id/icon_arrow"
+            android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="@dimen/size_large"
+            android:textColor="@color/dark_gray" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/icon_arrow"
+            android:layout_toStartOf="@+id/icon_arrow"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/list_item_secondary_text"
+            android:textSize="@dimen/size_small" />
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/icon_arrow"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            app:iiv_color="@color/list_item_chevron"
+            app:iiv_icon="gmd-chevron-right" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/list_item_partial_divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/content_padding_3_4"
+        android:paddingLeft="@dimen/content_padding_5_4"
+        android:paddingStart="@dimen/content_padding_5_4"
+        android:paddingRight="@dimen/content_padding_5_4"
+        android:paddingEnd="@dimen/content_padding_5_4"
+        android:paddingBottom="@dimen/content_padding_3_4"
+        android:layout_gravity="center_vertical">
+
+        <!--<com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/icon_distance"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:iiv_color="@color/trade_object_bar_icon"
+                app:iiv_icon="gmd-room" />
+
+        <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/icon_distance"
+                android:layout_toEndOf="@+id/icon_distance"
+                android:includeFontPadding="false"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:textSize="18sp" />
+
+        <TextView
+                android:id="@+id/distance_metric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_alignBottom="@+id/distance"
+                android:layout_toRightOf="@+id/distance"
+                android:layout_toEndOf="@+id/distance"
+                android:textStyle="bold"
+                android:textColor="@color/trade_object_bar_icon" />-->
+
+        <!--<com.mikepenz.iconics.view.IconicsImageView
+                android:id="@+id/icon_checklists"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginStart="120dp"
+                android:layout_centerVertical="true"
+                app:iiv_color="@color/trade_object_bar_icon"
+                app:iiv_icon="gmd-check-box" />-->
+
+        <com.mikepenz.iconics.view.IconicsImageView
+            android:id="@+id/icon_checklists"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            app:iiv_color="@color/trade_object_bar_icon"
+            app:iiv_icon="gmd-check-box" />
+
+        <TextView
+            android:id="@+id/checklists"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/icon_checklists"
+            android:layout_toEndOf="@+id/icon_checklists"
+            android:includeFontPadding="false"
+            android:textColor="@color/green"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/checklist_postfix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/checklists"
+            android:layout_toEndOf="@+id/checklists"
+            android:layout_alignBottom="@+id/checklists"
+            android:textColor="#58595B" />
+    </RelativeLayout>
+</LinearLayout>

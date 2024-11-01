@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/partial_toolbar" />
+
+            <seven.bsh.view.widget.block.CacheBlock
+                android:id="@+id/cache_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/content_padding_1_2"
+                android:background="@drawable/bg_block"
+                android:paddingBottom="@dimen/content_padding_1_2"
+                android:paddingEnd="@dimen/content_padding_1_2"
+                android:paddingLeft="@dimen/content_padding_1_2"
+                android:paddingRight="@dimen/content_padding_1_2"
+                android:paddingStart="@dimen/content_padding_1_2"
+                android:paddingTop="@dimen/content_padding"
+                app:tr_getCacheText="@string/activity_cache_label_common_get" />
+
+            <seven.bsh.view.widget.block.CacheBlock
+                android:id="@+id/cache_sku_block"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_block"
+                android:paddingBottom="@dimen/content_padding_1_2"
+                android:paddingEnd="@dimen/content_padding_1_2"
+                android:paddingLeft="@dimen/content_padding_1_2"
+                android:paddingRight="@dimen/content_padding_1_2"
+                android:paddingStart="@dimen/content_padding_1_2"
+                android:paddingTop="@dimen/content_padding"
+                app:tr_getCacheText="@string/activity_cache_label_sku_get" />
+
+        </LinearLayout>
+
+        <include layout="@layout/partial_side_menu" />
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

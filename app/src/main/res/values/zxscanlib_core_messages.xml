@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <item name="qr_message_decode_result_ok" type="id" />
+    <item name="qr_message_decode_result_nodata" type="id" />
+    <item name="qr_message_decode_data" type="id" />
+    <item name="qr_message_stop" type="id" />
+</resources>

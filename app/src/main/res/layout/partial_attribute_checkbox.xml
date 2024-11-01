@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/content_padding_1_2"
+    android:paddingRight="@dimen/content_padding_1_2"
+    android:paddingTop="@dimen/content_padding"
+    android:paddingBottom="@dimen/content_padding_1_2"
+    android:background="@drawable/bg_block">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="@dimen/content_padding_1_2"
+        android:layout_marginStart="@dimen/content_padding_1_2"
+        android:layout_marginRight="@dimen/content_padding_1_2"
+        android:layout_marginEnd="@dimen/content_padding_1_2"
+        android:layout_marginBottom="@dimen/content_padding"
+        android:textSize="@dimen/size_semi_medium"
+        android:textColor="@color/dark_gray"
+        android:background="@drawable/selector_btn_simple" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:paddingTop="@dimen/content_padding_1_2"
+        android:paddingBottom="@dimen/content_padding"
+        android:background="@drawable/bg_error_block"
+        android:visibility="gone"
+        android:textSize="@dimen/size_small"
+        android:includeFontPadding="false"
+        android:textColor="@color/white" />
+</LinearLayout>

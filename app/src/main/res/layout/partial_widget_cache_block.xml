@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <seven.bsh.view.widget.progressbar.ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginLeft="@dimen/content_padding"
+        android:layout_marginStart="@dimen/content_padding"
+        android:layout_marginRight="@dimen/content_padding"
+        android:layout_marginEnd="@dimen/content_padding"
+        style="?android:attr/progressBarStyleHorizontal" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingStart="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:paddingEnd="@dimen/content_padding"
+        android:layout_below="@+id/progress_bar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:text="@string/activity_cache_label_common_get"
+        android:background="@drawable/selector_btn_header"
+        android:textColor="@drawable/selector_btn_simple_text"
+        android:layout_marginTop="24dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/progress_bar"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/activity_cache_label_clear"
+        android:background="@drawable/selector_btn_header"
+        android:textColor="@drawable/selector_btn_simple_text"
+        android:layout_marginTop="24dp" />
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="content_corner">2dp</dimen>
+    <dimen name="divider_thickness">1dp</dimen>
+
+    <dimen name="content_padding_1_2">8dp</dimen>
+    <dimen name="content_padding_3_4">12dp</dimen>
+    <dimen name="content_padding">16dp</dimen>
+    <dimen name="content_padding_5_4">24dp</dimen>
+    
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+</resources>

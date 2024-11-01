@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/choice_btn"
+        android:layout_toLeftOf="@+id/choice_btn"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingStart="@dimen/content_padding"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textSize="@dimen/size_medium" />
+
+    <TextView
+        android:id="@+id/choice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="1dp"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:paddingTop="@dimen/content_padding"
+        android:paddingBottom="@dimen/content_padding"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/attribute_select_choice"
+        android:textColor="@color/accent"
+        android:textAllCaps="true" />
+</merge>

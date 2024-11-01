@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/content_padding_1_2"
+    android:paddingBottom="@dimen/content_padding_1_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/content_padding_1_2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/sku_label"
+            android:layout_toLeftOf="@+id/sku_label"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:text="@string/attribute_sku_name"
+            android:textColor="@color/dark_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sku_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/content_padding_1_2">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/price_label"
+            android:layout_toLeftOf="@+id/price_label"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:text="@string/attribute_sku_price"
+            android:textColor="@color/dark_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/price_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/quantity_label"
+            android:layout_toLeftOf="@+id/quantity_label"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:includeFontPadding="false"
+            android:text="@string/attribute_sku_quantity"
+            android:textColor="@color/dark_gray" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/quantity_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

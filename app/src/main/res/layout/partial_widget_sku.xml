@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <seven.bsh.view.widget.spinner.SingleChoiceSpinner
+        android:id="@+id/brand_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_simple" />
+
+    <seven.bsh.view.widget.spinner.SingleChoiceSpinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_simple" />
+
+    <seven.bsh.view.widget.spinner.SingleChoiceSpinner
+        android:id="@+id/sub_category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_simple" />
+
+    <seven.bsh.view.widget.spinner.SearchSingleChoiceSpinner
+        android:id="@+id/sku_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_btn_simple" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingStart="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:paddingEnd="@dimen/content_padding"
+        android:paddingBottom="@dimen/content_padding_1_2">
+
+        <EditText
+            android:id="@+id/price_field"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/content_padding_1_2"
+            android:layout_marginEnd="@dimen/content_padding_1_2"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:hint="@string/attribute_sku_price" />
+
+        <EditText
+            android:id="@+id/quantity_field"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/content_padding_1_2"
+            android:layout_marginStart="@dimen/content_padding_1_2"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:hint="@string/attribute_sku_quantity" />
+    </LinearLayout>
+
+    <com.mikepenz.iconics.view.IconicsButton
+        android:id="@+id/remove_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="1dp"
+        android:paddingLeft="@dimen/content_padding"
+        android:paddingRight="@dimen/content_padding"
+        android:layout_marginBottom="@dimen/content_padding_1_2"
+        android:textColor="@color/accent"
+        android:text="@string/attribute_sku_remove"
+        android:textSize="@dimen/size_semi_medium"
+        android:background="@drawable/selector_btn_simple" />
+</LinearLayout>

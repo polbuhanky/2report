@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/preload_header_height"
+        android:id="@+id/header"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/header"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/preload_leftRight_margin"
+        android:paddingLeft="@dimen/preload_leftRight_margin"
+        android:paddingEnd="@dimen/preload_leftRight_margin"
+        android:paddingRight="@dimen/preload_leftRight_margin"
+        android:background="@drawable/bg_gradient_preload">
+
+        <Button
+            android:id="@+id/button_demo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="1dp"
+            android:paddingTop="@dimen/button_margin_topBottom"
+            android:paddingBottom="@dimen/button_margin_topBottom"
+            android:background="@drawable/selector_btn_light"
+            android:textSize="@dimen/text_size_control_primary"
+            android:textColor="@drawable/selector_btn_light_text"
+            android:text="@string/fragment_start_label_demo" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/preload_or_topBottom_margin"
+            android:layout_marginBottom="@dimen/preload_or_topBottom_margin">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/label_or"
+                android:layout_toStartOf="@+id/label_or"
+                android:background="@drawable/line_light" />
+
+            <TextView
+                android:id="@+id/label_or"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/preload_primary"
+                android:text="@string/fragment_start_label_or"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/label_or"
+                android:layout_toEndOf="@+id/label_or"
+                android:background="@drawable/line_light" />
+        </RelativeLayout>
+
+        <seven.bsh.view.widget.button.LoginButton
+            android:id="@+id/widget_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include
+        layout="@layout/partial_logo"
+        android:layout_width="14dp"
+        android:layout_height="14dp" />
+</RelativeLayout>

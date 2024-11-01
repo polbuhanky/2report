@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/accent"
+        android:textSize="@dimen/size_medium" />
+
+    <com.mikepenz.iconics.view.IconicsImageView
+        android:id="@+id/icon"
+        android:layout_width="16dp"
+        android:layout_height="18dp"
+        android:layout_toRightOf="@+id/label"
+        android:layout_toEndOf="@+id/label"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        app:iiv_color="@color/accent"
+        app:iiv_icon="gmd-expand-more" />
+</merge>

@@ -1,0 +1,55 @@
+<resources>
+    <style name="Theme.7reporting" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="actionModeBackground">@color/accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="Theme.7reporting.Preload" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlActivated">@color/accent</item>
+        <item name="colorSwitchThumbNormal">@color/white</item>
+        <item name="colorPrimaryDark">@color/primaryDark</item>
+    </style>
+
+    <style name="Theme.7reporting.Checklist" parent="Theme.7reporting">
+        <item name="colorAccent">@color/red</item>
+    </style>
+
+    <style name="Theme.7reporting.Toolbar.Subtitle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle">
+        <item name="android:textSize">@dimen/size_smaller</item>
+    </style>
+
+    <style name="Theme.7reporting.Toolbar.Title" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">@dimen/size_medium</item>
+    </style>
+
+    <style name="Theme.7reporting.Button" parent="Base.TextAppearance.AppCompat.Widget.Button">
+        <item name="android:textSize">@dimen/size_small</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingStart">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingEnd">20dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+    </style>
+
+    <style name="Theme.7reporting.Button.Action" parent="Theme.7reporting.Button">
+        <item name="android:background">@drawable/selector_button_main_action</item>
+        <item name="background">@drawable/selector_button_main_action</item>
+        <item name="android:textColor">@color/selector_button_main</item>
+        <item name="android:paddingTop">@dimen/content_padding</item>
+        <item name="android:paddingLeft">@dimen/content_padding</item>
+        <item name="android:paddingStart">@dimen/content_padding</item>
+        <item name="android:paddingRight">@dimen/content_padding</item>
+        <item name="android:paddingEnd">@dimen/content_padding</item>
+        <item name="android:paddingBottom">@dimen/content_padding</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:minHeight">0dp</item>
+    </style>
+</resources>

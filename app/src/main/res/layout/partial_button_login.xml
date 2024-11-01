@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/button_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_marginEnd="1dp"
+        android:minHeight="1dp"
+        android:paddingTop="@dimen/button_margin_topBottom"
+        android:paddingBottom="@dimen/button_margin_topBottom"
+        android:layout_toLeftOf="@+id/button_login_qr"
+        android:layout_toStartOf="@+id/button_login_qr"
+        android:textSize="@dimen/text_size_control_primary"
+        android:textColor="@color/button_orange_text"
+        android:background="@drawable/selector_btn_orange"
+        android:text="@string/fragment_start_label_login" />
+
+    <ImageButton
+        android:id="@+id/button_login_qr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/selector_btn_orange"
+        android:src="@drawable/ic_qr_code"
+        android:gravity="center_vertical"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingLeft="@dimen/login_qr_btn_margin_leftRight"
+        android:paddingRight="@dimen/login_qr_btn_margin_leftRight"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:textColor="@color/button_orange_text" />
+</merge>

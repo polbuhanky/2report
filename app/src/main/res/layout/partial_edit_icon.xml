@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.mikepenz.iconics.view.IconicsTextView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/icon_edit_text_icon_min_width"
+        android:minHeight="1dp"
+        android:paddingLeft="@dimen/icon_text_edit_padding_leftRight"
+        android:paddingRight="@dimen/icon_text_edit_padding_leftRight"
+        android:gravity="center"
+        android:textSize="@dimen/edit_text_size_primary"
+        android:background="@color/icon_text_edit_light_icon_bg"
+        android:textColor="@color/icon_text_edit_light_icon" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="1dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="@dimen/button_margin_topBottom"
+        android:paddingBottom="@dimen/button_margin_topBottom"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon"
+        android:textColorHint="@color/icon_text_edit_hint"
+        android:textCursorDrawable="@null"
+        android:background="@color/icon_text_edit_light_bg"
+        android:textColor="@color/icon_text_edit_text"
+        android:textSize="@dimen/text_size_control_primary"
+        android:inputType="text" />
+</merge>

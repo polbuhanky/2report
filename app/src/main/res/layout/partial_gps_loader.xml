@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_loader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/placeholder_bg"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <seven.bsh.view.widget.overlay.loader.LoaderIndicator
+            android:id="@+id/loader_indicator"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/content_padding"
+            android:paddingStart="@dimen/content_padding"
+            android:paddingRight="@dimen/content_padding"
+            android:paddingEnd="@dimen/content_padding"
+            android:layout_marginTop="@dimen/content_padding"
+            android:layout_below="@+id/loader_indicator"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/font_size_20"
+            android:textColor="@color/placeholder_text"
+            android:text="@string/activity_update_report_loader_gps" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="IconTextEdit">
+        <attr name="tr_faIcon" format="string" />
+        <attr name="tr_hint" format="string" />
+        <attr name="android:inputType" />
+    </declare-styleable>
+
+    <declare-styleable name="ExpandableButton">
+        <attr name="tr_collapseText" format="string" />
+        <attr name="tr_expandText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CacheBlock">
+        <attr name="tr_getCacheText" format="string" />
+    </declare-styleable>
+</resources>

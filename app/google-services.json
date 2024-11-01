@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "715081604809",
+    "project_id": "seven-181d7",
+    "storage_bucket": "seven-181d7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:715081604809:android:9ae3cd4bd30bcbffb37718",
+        "android_client_info": {
+          "package_name": "seven.bsh.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "715081604809-2i3knp9gvj1v7ibe50rlm4mcclfb7lti.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCR79q8up1MdZaK7o07vHNZIEbn37Jd1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "715081604809-2i3knp9gvj1v7ibe50rlm4mcclfb7lti.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
